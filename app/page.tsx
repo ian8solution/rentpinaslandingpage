@@ -77,7 +77,7 @@ export default function Component() {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Link href="https://www.app.rentpinas.app/" target="_blank"
+            <Link href="https://app.rentpinas.app/" target="_blank"
               className="hidden md:inline-flex text-gray-300 hover:text-white hover:bg-gray-800/50"
             >
               Sign In

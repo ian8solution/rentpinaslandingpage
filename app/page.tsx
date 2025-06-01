@@ -245,10 +245,10 @@ export default function Component() {
                           </div>
 
                           {/* Featured Listing */}
-                          <div className="rounded-2xl overflow-hidden mb-5 relative shadow-2xl border-2 border-gray-600/40 relative z-10">
+                          <div className="rounded-2xl overflow-hidden mb-5 relative shadow-2xl border-2 border-gray-600/40 z-10">
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10"></div>
                             <Image
-                              src="/placeholder.svg?height=200&width=360"
+                              src="/condo.png?height=200&width=360"
                               alt="Luxury Condo"
                               width={360}
                               height={200}
@@ -278,7 +278,7 @@ export default function Component() {
                             <div className="rounded-xl overflow-hidden bg-gray-700/50 backdrop-blur-sm border border-gray-600/40">
                               <div className="h-24 relative">
                                 <Image
-                                  src="/placeholder.svg?height=120&width=180"
+                                  src="/house.png?height=120&width=180"
                                   alt="Toyota Vios"
                                   width={180}
                                   height={120}
@@ -297,7 +297,7 @@ export default function Component() {
                             <div className="rounded-xl overflow-hidden bg-gray-700/50 backdrop-blur-sm border border-gray-600/40">
                               <div className="h-24 relative">
                                 <Image
-                                  src="/placeholder.svg?height=120&width=180"
+                                  src="/car.png?height=120&width=180"
                                   alt="Tour Guide"
                                   width={180}
                                   height={120}
@@ -335,7 +335,7 @@ export default function Component() {
                             <MessageCircle className="h-6 w-6 text-gray-400 mb-2" />
                             <span className="text-gray-400 text-xs">Chat</span>
                             <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-600 rounded-full flex items-center justify-center shadow-lg">
-                              <span className="text-white text-xs font-bold">2</span>
+                              <span className="text-white text-xs font-bold">{"2"}</span>
                             </div>
                           </div>
                         </div>
@@ -392,14 +392,14 @@ export default function Component() {
                     <Download className="mr-3 h-6 w-6" />
                     Download App
                   </Button>
-                  <Button
+                  {/* <Button
                     size="lg"
                     variant="outline"
                     className="border-2 border-gray-400 text-gray-100 hover:bg-gray-700/60 hover:text-white backdrop-blur-sm text-base font-bold h-14"
                   >
                     <Play className="mr-3 h-6 w-6" />
                     Watch Demo
-                  </Button>
+                  </Button> */}
                 </div>
 
                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-300">
@@ -439,7 +439,7 @@ export default function Component() {
               <Card className="group hover:shadow-2xl transition-all duration-500 bg-gray-800/50 border-gray-600/50 hover:border-gray-400/50 backdrop-blur-sm hover:bg-gray-700/60 overflow-hidden">
                 <div className="h-48 w-full overflow-hidden relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=500"
+                    src="/woman.png?height=300&width=500"
                     alt="Companionship services"
                     width={500}
                     height={300}
@@ -477,7 +477,7 @@ export default function Component() {
               <Card className="group hover:shadow-2xl transition-all duration-500 bg-gray-800/50 border-gray-600/50 hover:border-gray-400/50 backdrop-blur-sm hover:bg-gray-700/60 overflow-hidden">
                 <div className="h-48 w-full overflow-hidden relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=500"
+                    src="/car.png?height=300&width=500"
                     alt="Luxury vehicles"
                     width={500}
                     height={300}
@@ -515,7 +515,7 @@ export default function Component() {
               <Card className="group hover:shadow-2xl transition-all duration-500 bg-gray-800/50 border-gray-600/50 hover:border-gray-400/50 backdrop-blur-sm hover:bg-gray-700/60 overflow-hidden">
                 <div className="h-48 w-full overflow-hidden relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=500"
+                    src="/condo.png?height=300&width=500"
                     alt="Luxury properties"
                     width={500}
                     height={300}
@@ -553,7 +553,7 @@ export default function Component() {
               <Card className="group hover:shadow-2xl transition-all duration-500 bg-gray-800/50 border-gray-600/50 hover:border-gray-400/50 backdrop-blur-sm hover:bg-gray-700/60 overflow-hidden">
                 <div className="h-48 w-full overflow-hidden relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=500"
+                    src="/room.png?height=300&width=500"
                     alt="Comfortable rooms"
                     width={500}
                     height={300}
@@ -591,7 +591,7 @@ export default function Component() {
               <Card className="group hover:shadow-2xl transition-all duration-500 bg-gray-800/50 border-gray-600/50 hover:border-gray-400/50 backdrop-blur-sm hover:bg-gray-700/60 overflow-hidden">
                 <div className="h-48 w-full overflow-hidden relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=500"
+                    src="/service.png?height=300&width=500"
                     alt="Professional services"
                     width={500}
                     height={300}
@@ -629,7 +629,7 @@ export default function Component() {
               <Card className="group hover:shadow-2xl transition-all duration-500 bg-gray-800/50 border-gray-600/50 hover:border-gray-400/50 backdrop-blur-sm hover:bg-gray-700/60 overflow-hidden">
                 <div className="h-48 w-full overflow-hidden relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=500"
+                    src="/equip.png?height=300&width=500"
                     alt="Equipment rental"
                     width={500}
                     height={300}
@@ -693,7 +693,7 @@ export default function Component() {
                   <h3 className="text-xl font-semibold text-white mb-4">Browse & Search</h3>
                   <div className="mb-4 h-40 overflow-hidden rounded-lg">
                     <Image
-                      src="/placeholder.svg?height=200&width=300"
+                      src="/search.png?height=200&width=300"
                       alt="Browse and search"
                       width={300}
                       height={200}
@@ -716,7 +716,7 @@ export default function Component() {
                   <h3 className="text-xl font-semibold text-white mb-4">Book & Pay</h3>
                   <div className="mb-4 h-40 overflow-hidden rounded-lg">
                     <Image
-                      src="/placeholder.svg?height=200&width=300"
+                      src="/pay.png?height=200&width=300"
                       alt="Book and pay"
                       width={300}
                       height={200}
@@ -739,7 +739,7 @@ export default function Component() {
                   <h3 className="text-xl font-semibold text-white mb-4">Enjoy & Review</h3>
                   <div className="mb-4 h-40 overflow-hidden rounded-lg">
                     <Image
-                      src="/placeholder.svg?height=200&width=300"
+                      src="/rate.png?height=200&width=300"
                       alt="Enjoy and review"
                       width={300}
                       height={200}
@@ -961,7 +961,7 @@ export default function Component() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-gray-400 text-gray-200 hover:bg-gray-800/50 hover:text-white flex-1 w-full sm:w-auto backdrop-blur-sm"
+                  className="bg-gradient-to-r from-white to-gray-200 text-black hover:from-gray-100 hover:to-gray-300 flex-1 w-full sm:w-auto shadow-2xl"
                 >
                   <Download className="mr-2 h-5 w-5" />
                   Download for Android

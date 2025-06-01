@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { Input } from "@/components/ui/input"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -23,10 +26,13 @@ import {
   MessageCircle,
   MapPin,
   Play,
+  X,
 } from "lucide-react"
 import Image from "next/image"
 
 export default function Component() {
+
+   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden">
       {/* Animated Background Elements - Butterfly Wings */}
@@ -85,11 +91,29 @@ export default function Component() {
             <Button className="bg-gradient-to-r from-white to-gray-200 text-black hover:from-gray-100 hover:to-gray-300 shadow-lg">
               Get Started
             </Button>
-            <Button variant="ghost" size="icon" className="md:hidden text-gray-300 hover:text-white">
-              <Menu className="h-5 w-5" />
-            </Button>
+           <Button
+        variant="ghost"
+        size="icon"
+        className="md:hidden text-gray-300 hover:text-white"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+      </Button>
+
+     
           </div>
         </div>
+         {isOpen && (
+        <div className="md:hidden px-4 pb-4 space-y-2 bg-black/90 border-t border-gray-700/50">
+          <Link href="#features" className="block text-sm font-medium text-gray-300 hover:text-white">Features</Link>
+          <Link href="#how-it-works" className="block text-sm font-medium text-gray-300 hover:text-white">How It Works</Link>
+          <Link href="#categories" className="block text-sm font-medium text-gray-300 hover:text-white">Categories</Link>
+          <Link href="#testimonials" className="block text-sm font-medium text-gray-300 hover:text-white">Testimonials</Link>
+          <Link href="https://app.rentpinas.app/" target="_blank" className="block text-sm font-medium text-gray-300 hover:text-white">
+            Sign In
+          </Link>
+        </div>
+      )}
       </header>
 
       <main className="flex-1 relative">

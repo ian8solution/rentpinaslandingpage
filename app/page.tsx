@@ -77,12 +77,11 @@ export default function Component() {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button
-              variant="ghost"
+            <Link href="https://www.app.rentpinas.app/" target="_blank"
               className="hidden md:inline-flex text-gray-300 hover:text-white hover:bg-gray-800/50"
             >
               Sign In
-            </Button>
+            </Link>
             <Button className="bg-gradient-to-r from-white to-gray-200 text-black hover:from-gray-100 hover:to-gray-300 shadow-lg">
               Get Started
             </Button>
